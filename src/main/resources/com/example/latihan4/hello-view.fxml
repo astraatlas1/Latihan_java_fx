@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<GridPane fx:controller="com.example.latihan4.HelloController" xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER" hgap="20" vgap="20">
+    <Label text="Kalkulator Sederhana" textFill="darkblue" GridPane.columnIndex="0" GridPane.rowIndex="0"></Label>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Masukan Bilangnan Pertama"/>
+        <TextField fx:id="tfBilanganPertama" focusTraversable="false" promptText="Masukan Bilangan Pertama"></TextField>
+    </VBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Label text="Masukan Bilangnan Kedua"/>
+        <TextField fx:id="tfBilanganKedua" focusTraversable="false" promptText="Masukan Bilangan Pertama"></TextField>
+    </VBox>
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Button fx:id="btnTambah" text="Tambah"  GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onButtonClicked" ></Button>
+        <Button fx:id="btnKurang" text="Kurang"  GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onButtonClicked"></Button>
+        <Button fx:id="btnKali" text="kali"  GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onButtonClicked"></Button>
+        <Button fx:id="btnBagi" text="Bagi"  GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#onButtonClicked"></Button>
+    </HBox>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Label fx:id="hasil" text="Hasil"></Label>
+        <TextField fx:id="hasilBilangan" disable="true"></TextField>
+    </VBox>
+</GridPane>
